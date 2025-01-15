@@ -7,7 +7,7 @@ terraform {
     }
     backend "s3" {
         bucket = "nanda3s"
-        key    = "eks-sg"
+        key    = "eks-sg1"
         region = "us-east-1"
         dynamodb_table = "nandadb"
     }

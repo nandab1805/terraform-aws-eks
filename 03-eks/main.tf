@@ -11,10 +11,10 @@ module "eks" {
   control_plane_subnet_ids = split(",", local.private_subnet_ids)
 
   create_cluster_security_group = false
-  cluster_security_group_id = local.cluster.sg_id
+  cluster_security_group_id = local.cluster_sg_id
 
   create_node_security_group = false
-  node_security_group_id = local.node.sg_id
+  node_security_group_id = local.node_sg_id
   
   #the user who will be u use able to manage the EKS cluster
   enable_cluster_creator_admin_permissions = true
